@@ -1,0 +1,436 @@
+/* 태블릿 버전 */
+@media screen and (max-width:1279px){
+    
+}
+
+/* 모바일 버전 미디어 쿼리 */
+@media screen and (max-width:480px){
+    header {
+        height: 50px;
+    }
+    header .logo {
+        width: 40%;
+    }
+    header nav {
+        position: absolute;
+        right: 0; top:0;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        background-color: #000;
+    }
+    /* 주메뉴 */
+    header nav > ul {
+        flex-flow: column nowrap;
+        margin-top: 3rem;
+    }
+    header nav > ul > li > a {
+        display: block;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+    header nav > ul > li > a:after{
+        display: none;
+    }
+    header nav .sub{
+        position: relative;
+        display: none;
+        top:0;
+    }
+    header .sub-bg{
+        display: none;
+    }
+    header nav .sub li a {
+        color: #aaa;
+    }
+    header nav .nav-header {
+        display: block;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+    header nav .nav-header ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    header nav .nav-header ul li {
+        padding: 0 0.5rem;
+    }
+    header nav .nav-header ul li a {
+        color: #fff;
+        font-size: 0.9rem;
+    }
+    header nav .nav-header ul li a {
+        color: #fff;
+        font-size: 0.9rem;
+    }
+    header nav .nav-header #close-btn {
+        width: 1.4rem;
+    }
+
+
+    /* pc버전 메뉴이므로 모바일에서는 안보임 */
+    header .top-menu {
+        display: none;
+    }
+    /* 모바일 버전 메뉴 보임 */
+    header .mobile-top-menu{
+        display: block;
+    }
+    header .mobile-top-menu ul {
+        display: flex;
+    }
+    header .mobile-top-menu ul li {
+        width: 1.4rem;
+        margin-left: 0.8rem;
+    }
+
+    .s1 {
+        height: 100vh;
+    }
+    .s1 .movie iframe {
+        width: 100%;
+    }
+    .s1 .big-title h1 {
+        font-size: 2.2rem;
+    }
+    .s1 .scroll {
+        display: none;
+    }
+    .s1 .movie{
+        display:none;
+    }
+
+    .s2 .swiper .swiper-slide {
+        width: 100%;
+        flex-flow: column nowrap;
+    }
+    .s2 .swiper .swiper-slide .des {
+        width: 100%;
+    }
+    .s2 .swiper .swiper-slide .des h2 {
+        font-size: 2rem;
+    }
+    .s2 .swiper .swiper-slide .des > p {
+        top: 6rem;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    .s2 .swiper .swiper-slide .more-btn {
+        bottom: 120%;
+        left: 50%;
+        background-color: #fff;
+        transform: translateX(-50%);
+    }
+    .s2 .swiper .swiper-pagination {
+        top: 15rem;
+        bottom:auto;
+    }
+    .s2 .swiper .swiper-pagination .swiper-pagination-total {
+        left:10.5rem;
+    }
+    .s2 .swiper .swiper-progress-bar {
+        top: 15.5rem;
+        bottom: auto;
+        width: 7rem;
+    }
+    .s2 .swiper .swiper-button-prev {
+        top: 15.5rem;
+        bottom:auto;
+    }
+    .s2 .swiper .swiper-button-next {
+        top: 15.5rem;
+        bottom:auto;
+    }
+    .s2 .swiper .swiper-slide .photo {
+        width: 100%;
+        z-index: 9;
+    }
+    .s3 { padding: 10% 0; }
+    .s3 .text-ani .text-wrap {
+        font-size: 3rem;
+    }
+    .s4 .product .product-box {
+        width:90%;
+    }
+    .s4 .product .product-box .cont {
+        flex-flow:column nowrap;
+    }
+    .s4 .product .product-box .cont .left-img-box,
+    .s4 .product .product-box .cont .left-cover-box,
+    .s4 .product .product-box .cont .left-txt-box {
+        width:100%;
+    }
+    .s4 .product .product-box .product-title-wrap .product-title-child {
+        padding:0;
+    }
+    .s4 .product .product-box .product-title-wrap .product-title-child h2 {
+        top:0;
+        font-size:2rem;
+    }
+    .s4 .product .product-box .product-title-wrap .product-title-child p {
+        top:3rem;
+        line-height: 1.4rem;
+    }
+    .s4.child-ani .product .product-box .product-title-wrap .product-title-child h2 {
+        left:0;
+    }
+    .s4.child-ani .product .product-box .product-title-wrap .product-title-child p {
+        left:0;
+    }
+    .s4 .product .product-box .product-title-wrap .product-title-child .boxs {
+        width:100%;
+        margin-top: 8rem;
+    }
+    .s4 .product .product-box .product-title-wrap .product-title-child .boxs .box {
+        width:22.4%;
+        height:4rem;
+    }
+    .s4 .product .product-box .product-title-wrap .product-title-child .boxs .box h3 {
+        font-size:0.7rem;
+    }
+    .s4 .product .product-box .cont .right-img-box, .s4 .product .product-box .cont .right-cover-box, .s4 .product .product-box .cont .right-txt-box {
+        width:100%;
+    }
+    .s4 .product .product-box .cont .right-txt-box {
+        padding-top:5rem;
+    }
+    .s5 {
+        padding: 20% 5%;
+    }
+    .s5 h2 {
+        top: 12%;
+        font-size: 1.6rem;
+    }
+    .s5 .big-box h3 {
+        font-size: 1.6rem;
+    }
+    .s5 .big-box p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        white-space: initial;     /* nowrap 해제 */
+    }
+    .s6 {
+        padding: 10rem 0;
+    }
+    .s6 .intro-title > h2 {
+        font-size: 1.6rem;
+        margin-bottom: 0.35rem;
+    }
+    .s6 .intro-title > p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    .s6 .intro-title .more-btn {
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 8rem;
+    }
+    .s6 .intro-title .more-btn .more p {
+        font-size: 0.9rem;
+    }
+    .s6 .intro-title .more-btn .more .arrow {
+        padding: 0.8rem 0.6rem;
+    }
+    .s6 .intro-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .s6 .intro-content .intro1 {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    .s6 .intro-content .intro2 {
+        width: 74%;
+        margin-left:3%;
+        margin-top: 4rem;
+    }
+    .s6 .intro-content .intro3 {
+        width: 72%;
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 4rem;
+    }
+    .s6 .intro-content .intro4 {
+        width: 72%;
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+    .s6 .intro-content .intro5 {
+        width: 68%;
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 4rem;
+    }
+    .s6 .intro-content .intro6 {
+        width: 72%;
+        margin-left: 3%;
+        margin-top: 4rem;
+    }
+    .s6 .intro-content .intro7 {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    .s6 .intro-content .custom-cursor-area .intro-des {
+        right: -110%;
+        font-size: 1rem;
+    }
+    .s6 .intro-content .custom-cursor-area span {
+        font-size: 0.9rem;
+        margin-top: 0.3rem;
+    }
+    .text-ani2 {
+        margin: 0;
+    }
+    .text-ani2 .text-wrap {
+        font-size: 3rem;
+    }
+    .s8 {
+        padding-top: 5rem;
+    }
+    .s8 .text-wrap p {
+        font-size: 1.2rem;
+    }
+    .s9 {
+        padding: 5rem 0;
+    }
+    .s9.child-ani .partner-wrap > h2 {
+        font-size: 2rem;
+    }
+    .s9.child-ani .partner-wrap > p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+    .s9.child-ani .partner-wrap .more-btn {
+        margin-top: 3rem;
+    }
+    .s10 .text-ani3 {
+        padding: 1.5rem 0;
+        height: 5rem;
+    }
+    .S10 .text-ani3 .inner .track p {
+        font-size: 1.6rem;
+    }
+    .s11 {
+        margin-top: 8rem;
+        padding-left: 5%
+    }
+    .s11 h2 {
+        font-size: 2rem;
+    }
+    .s11 > p {
+        font-size: 0.9rem;
+    }
+    .s11 .swiper-wrapper {
+        margin-top: 4rem;
+    }
+    .s11 .swiper .swiper-button-prev{
+        width: 30px;
+        height:30px;
+        top:3rem;
+        right: 3rem;
+    }
+    .s11 .swiper .swiper-button-next{
+        width: 30px;
+        height:30px;
+        top:3rem;
+        right: 1rem;
+    }
+    .s11 .swiper-slide b {
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+    .s11 .swiper-slide h3{
+        font-size: 1rem;
+        white-space: initial;
+    }
+    .s11 .swiper-slide p {
+        font-size: 0.8rem;
+    }
+    .s11 .swiper-slide span {
+        color: #999;
+    }
+    .s12 {
+        padding-top: 4rem;
+        height: 54vh;
+    }
+    .s12 .text-ani .text-wrap {
+        font-size: 3rem;
+    }
+    .s12 .line-up {
+        top: 5rem;
+        width: 90%;
+    }
+    .s12 .line-up h2 {
+        font-size: 1.9rem;
+    }
+    .s12 .line-up p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+    .s12 .line-up .line-up-video {
+        margin-top: 2rem;
+        height: 20vh;
+    }
+    footer .footer-wrap {
+        width: 90%;
+        padding: 2rem 0;
+    }
+    footer .footer-wrap .footer-top {
+        padding: 2rem 0;
+        flex-flow: column nowrap;
+    }
+    footer .footer-wrap .footer-top .footer-top-left h2 {
+        font-size: 0.8rem;
+    }
+    footer .footer-wrap .footer-top .footer-top-left, footer .footer-wrap .footer-top .footer-top-right {
+        width: 100%;
+    }
+    footer .footer-wrap .footer-top .footer-top-left address {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    footer .footer-wrap .footer-top .footer-top-left address span {
+        font-size: 0.9rem;
+    }
+    footer .footer-wrap .footer-top .footer-top-left .btns {
+        margin-top: 2rem;
+    }
+    footer .footer-wrap .footer-top .footer-top-left .btns button {
+        font-size: 0.8rem;
+        padding: 0.6rem 0.8rem;
+        margin: 0 0.25rem;
+    }
+    footer .footer-wrap .footer-top .footer-top-right .map {
+        margin-top: 1rem;
+        height: 15rem;
+    }
+    footer .footer-wrap .footer-bottom {
+        padding: 2rem 0;
+    }
+    footer .footer-wrap .footer-bottom .footer-bottom-left {
+        width: 100%;
+    }
+    footer .footer-wrap .footer-bottom .footer-bottom-left .footer-logo {
+        width:12rem;
+    }
+    footer .footer-wrap .footer-bottom .footer-bottom-left address {
+        line-height: 1.4rem;
+        margin: 1.8rem 0;
+    }
+    footer .footer-wrap .footer-bottom .footer-top-right {
+        width: 100%;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    footer .footer-wrap .footer-botrtom .footer-top-right .sns {
+        margin-top: 2rem;
+    }
+}

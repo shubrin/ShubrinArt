@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/main1.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js'></script>
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/EasePack.min.js'></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js'></script> -->
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">카테고리</a>
+                        <ul class="sub">
+                            <li><a href="#">캐릭터 일러스트</a></li>
+                            <li><a href="#">디자인</a></li>
+                            <li><a href="#">영상/편집</a></li>
+                            <li><a href="#">애니메이션</a></li>
+                        </ul>
+                    </li><!--카테고리-->
+                    <li>
+                        <a href="#">의뢰게시판</a>
+                    </li><!--의뢰게시판-->
+                    <li>
+                        <a href="#">이용안내</a>
+                        <ul class="sub">
+                            <li><a href="#">간편 이용안내</a></li>
+                            <li><a href="#">의뢰자 이용안내</a></li>
+                            <li><a href="#">환불규정 및 유의사항</a></li>
+                        </ul>
+                    </li><!--이용안내-->
+                    <li>
+                        <a href="#">이용후기</a>
+                    </li><!--이용후기-->
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul class="sub">
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">고객문의</a></li>
+                        </ul>
+                    </li><!-- 고객센터-->
+                </ul>
+                <!-- 서브메뉴 배경 -->
+                <div class="sub-bg"></div>
+            </nav>
+            <div class="top-menu">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">
+                        <span>KOR</span>
+                        <i><img src="img/imo/1737380_banking_connections_earth_globe_icon.svg" alt="다국어지원"></i>
+                    </a></li>
+                </ul>
+            </div><!--top-menu-->
+            <div class="mobile-top-menu">
+                <ul>
+                    <li><a href="#">
+                        <img src="img/imo/9027170_user_circle_thin_icon.png" alt="로그인">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/imo/9026025_user_circle_plus_icon.svg" alt="회원가입">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/imo/earth.png" alt="다국어지원">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/imo/earth.png" alt="메뉴 아이콘">
+                    </a></li>
+                </ul>
+            </div><!--mobile-top-menu-->
+        </header>
+        <section class="s1" data-bg="white">
+            <div class="movie">
+                <!-- 유튜브 영상 넣기 -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HMx9z5tyL8E?si=ePSUamAfsCgmfw4L&amp;controls=0&autoplay=1&mute=1&loop=1&playlist=HMx9z5tyL8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HAkL-TTG1MA?si=bcDEie1kdseN2CWi&amp;controls=0&autoplay=1&mute=1&loop=1&playlist=TTG1MA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            </div>
+            <div class="big-title">
+                <h1>Animation&Illustrator<br>Commission</h1>
+            </div>
+            <div class="scroll">
+                <h2>Scroll</h2>
+                <div class="bar">
+                    <span></span>
+                </div>
+            </div> <!-- movie -->
+        </section> <!-- section s1 -->
+        <section class="s2">
+            <div class="swiper mainSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="des">
+                            <span>일러스트</span>
+                            <h2>생일파티</h2>
+                            <p>괜찮아, 생일에 아무도 안 올 수도 있잖아?<br>시작은 모두 다 그럴 수 있어!</p>
+                            <div class="more-btn">
+                                <a href="#">
+                                    <div class="more">
+                                        <span></span>
+                                        <p>view more</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <img src="img/imo/211621_c_right_arrow_icon.svg" alt="arrow">
+                                    </div>
+                                </a>
+                            </div> <!-- more-btn -->
+                        </div> <!-- des -->
+                        <div class="photo">
+                            <img src="img/img/slide1.png" alt="생일파티">
+                            <span></span>
+                        </div>
+                    </div> <!-- swiper-slide-->
+                    <div class="swiper-slide">
+                        <div class="des">
+                            <span>일러스트</span>
+                            <h2>데스푸드</h2>
+                            <p>가끔은 음식같지 않은 음식을 먹어야 할 때도 있지.<br>그게 어떤 비쥬얼과 냄새를 풍기더라도..</p>
+                            <div class="more-btn">
+                                <a href="#">
+                                    <div class="more">
+                                        <span></span>
+                                        <p>view more</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <img src="img/imo/211621_c_right_arrow_icon.svg" alt="arrow">
+                                    </div>
+                                </a>
+                            </div> <!-- more-btn -->
+                        </div> <!-- des -->
+                        <div class="photo">
+                            <img src="img/img/slide2.png" alt="데스푸드">
+                            <span></span>
+                        </div>
+                    </div> <!-- swiper-slide-->
+                    <div class="swiper-slide">
+                        <div class="des">
+                            <span>일러스트</span>
+                            <h2>패션쇼</h2>
+                            <p>누군가와 같이 한다는 것은 좋은 걸거야.<br>섭외에는 수단과 방법을 가리지 말아야지.</p>
+                            <div class="more-btn">
+                                <a href="#">
+                                    <div class="more">
+                                        <span></span>
+                                        <p>view more</p>
+                                    </div>
+                                    <div class="arrow">
+                                        <img src="img/imo/211621_c_right_arrow_icon.svg" alt="arrow">
+                                    </div>
+                                </a>
+                            </div> <!-- more-btn -->
+                        </div> <!-- des -->
+                        <div class="photo">
+                            <img src="img/img/slide3.png" alt="패션쇼">
+                            <span></span>
+                        </div>
+                    </div> <!-- swiper-slide-->
+                </div> <!-- swiper wrapper-->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-progress-bar">
+                    <span class="progress-bar-ani">
+                    </span>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div> <!-- swiper mainSwiper-->
+        </section> <!-- s2 -->
+        <section class="s3">
+            <!-- 흐르는 글자 -->
+            <div class="text-ani">
+                <div class="text-wrap">
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                </div>
+            </div> <!--text-ani -->
+        </section> <!-- s3 -->
+        <section class="s4" data-bg="white"> 
+            <div class="product">
+                <div class="product-box">
+                     <!-- 이미지 영역 -->
+                    <div class="cont img-box">
+                        <div class="left-img-box">
+                            <div class="product-img img-box2">
+                                <div class="photo">
+                                    <img src="img/img/productimg2.jpg" alt="디스코드">
+                                </div>
+                            </div> <!-- img-box 2 -->
+                        </div> <!-- left-img-box -->
+                        <div class="right-img-box">
+                            <div class="product-img img-box1">
+                                <div class="photo">
+                                    <img src="img/img/productimg1.jpg" alt="팬심">
+                                </div>
+                            </div><!-- img-box 1 -->
+                            <div class="product-img img-box3">
+                                <div class="photo">
+                                    <img src="img/img/productimg3.jpg" alt="토스">
+                                </div>
+                            </div> <!-- img-box 3 -->
+                        </div><!-- right-img-box -->
+                    </div> <!-- cont img-box -->
+                    <!-- 마스크 영역 -->
+                    <div class="cont cover-box">
+                        <div class="left-cover-box">
+                            <div class="cover cover1"></div>
+                            <div class="cover cover2"></div>
+                            <div class="cover cover3"></div>
+                            <div class="cover cover4"></div>
+                        </div><!-- left-cover-box -->
+                        <div class="right-cover-box">
+                            <div class="cover cover1"></div>
+                            <div class="cover cover2"></div>
+                            <div class="cover cover3"></div>
+                            <div class="cover cover4"></div>
+                        </div><!-- right-cover-box -->
+                    </div> <!-- cont cover-box -->
+                    <!-- 글자와 작은 상자 영역 -->
+                    <div class="cont txt-box">
+                        <div class="left-txt-box">
+                            <!-- 첫번째 글자 영역 -->
+                            <div class="product-title-wrap txt1">
+                                <div class="product-title-child">
+                                    <h2>팬심도 좋아!</h2>
+                                    <p>팬들의 사랑은 항상 좋아!<br>좀 더 사랑과 관심을 달라구!</p>
+                                    <div class="boxs">
+                                        <div class="box">
+                                            <h3>작품 소개</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg>
+                                            </span>
+                                        </div> <!--box -->
+                                        <div class="box">
+                                            <h3>작품 설명</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg> 
+                                            </span>
+                                        </div> <!--box -->
+                                        <div class="box">
+                                            <h3>선물 고르기</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg>
+                                            </span>
+                                        </div> <!--box -->
+                                        <div class="box">
+                                            <h3>선물 보내기</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg>
+                                            </span>
+                                        </div> <!--box -->
+                                    </div> <!-- boxs -->
+                                </div><!--product-title-child-->
+                            </div> <!-- product-title-wrap-->
+                            <!-- 세번째 글자 영역 -->
+                            <div class="product-title-wrap txt3">
+                                <div class="product-title-child">
+                                    <h2>후원해줘!</h2>
+                                    <p>팬들의 후원은 성장에 도움이 돼 !<br>좀 더 사랑과 관심을 달라구!</p>
+                                    <div class="boxs">
+                                        <div class="box">
+                                            <h3>작품 소개</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg>
+                                            </span>
+                                        </div> <!--box -->
+                                        <div class="box">
+                                            <h3>작품 설명</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg> 
+                                            </span>
+                                        </div> <!--box -->
+                                        <div class="box">
+                                            <h3>후원계좌</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg>
+                                            </span>
+                                        </div> <!--box -->
+                                        <div class="box">
+                                            <h3>안내사항</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg>
+                                            </span>
+                                        </div> <!--box -->
+                                    </div> <!-- boxs -->
+                                </div> <!--product-title-child-->
+                            </div> <!-- product-title-wrap-->
+                        </div> <!-- left-text-box -->
+                        <div class="right-txt-box">
+                            <!-- 두번째 글자 영역 -->
+                            <div class="product-title-wrap txt2">
+                                <div class="product-title-child">
+                                    <h2>소통은 디스코드!</h2>
+                                    <p>수정 및 피드백은 디스코드로!<br>확실한 피드백 약속할게!</p>
+                                    <div class="boxs">
+                                        <div class="box">
+                                            <h3>작품 소개</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg>
+                                            </span>
+                                        </div> <!--box -->
+                                        <div class="box">
+                                            <h3>작품 설명</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg> 
+                                            </span>
+                                        </div> <!--box -->
+                                        <div class="box">
+                                            <h3>디스코드 입장</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg>
+                                            </span>
+                                        </div> <!--box -->
+                                        <div class="box">
+                                            <h3>피드백 / 수정안 양식</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg>
+                                            </span>
+                                        </div> <!--box -->
+                                        <div class="box">
+                                            <h3>안내사항</h3>
+                                            <span>
+                                                <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z"/></svg>
+                                            </span>
+                                        </div> <!--box -->
+                                    </div> <!-- boxs -->
+                                </div> <!--product-title-child-->
+                            </div> <!-- product-title-wrap-->
+                        </div> <!-- right-text-box -->
+                    </div> <!-- cont txt-box-->
+                </div> <!-- product-box -->
+            </div> <!-- product -->
+        </section> <!-- s4 -->
+        <section class="s5" data-bg="black">
+            <div class="big-box">
+                <h2>An information about</h2>
+                <div class="custom-cursor-area">
+                    <a href="#">
+                        <div class="big-photo">
+                            <img src="img/img/bigphoto.png" alt="big">
+                        </div>
+                        <h3>커미션 안내</h3>
+                        <p>슈브린 아트는 버츄얼 아바타 제작 및 리깅/일러스트/이모티콘/애니메이션 등을 제공하고 있습니다.</p>
+                    </a>
+                </div> <!-- custom-sursor -->
+            </div> <!-- big box-->
+        </section> <!-- s5 -->
+        <section class="s6" data-bg="white">
+            <div class="intro-title">
+                <h2>Hello, Shubrin Art</h2>
+                <p>다양환 장르와 컨셉으로<br>모두의 삶을 행복하게 하는 문화공간!</p>
+                <div class="more-btn">
+                    <a href="#">
+                        <div class="more">
+                            <span></span>
+                            <p>view more</p>
+                        </div>
+                        <div class="arrow">
+                            <img src="img/imo/211621_c_right_arrow_icon.svg" alt="arrow">
+                        </div>
+                    </a>
+                </div> <!-- more-btn -->
+            </div>
+            <div class="intro-content">
+                <div class="custom-cursor-area intro1">
+                    <a href="#">
+                        <div class="intro-wrap">
+                            <div class="intro-img">
+                                <img src="img/img/intro1.png" alt="intro1">
+                            </div>
+                            <div class="intro-hover">
+                                <h3>이모티콘</h3>
+                            </div>
+                        </div>
+                        <div class="intro-des">
+                            <p>이모티콘</p>
+                        </div>
+                        <span>설명</span>
+                    </a>
+                </div> <!-- custom-sursor-area intro1 -->
+                <div class="custom-cursor-area intro2">
+                    <a href="#">
+                        <div class="intro-wrap">
+                            <div class="intro-img">
+                                <img src="img/img/intro2.png" alt="intro2">
+                            </div>
+                            <div class="intro-hover">
+                                <h3>이모티콘</h3>
+                            </div>
+                        </div>
+                        <div class="intro-des">
+                            <p>이모티콘</p>
+                        </div>
+                        <span>설명</span>
+                    </a>
+                </div> <!-- custom-sursor-area intro2 -->
+                <div class="custom-cursor-area intro3">
+                    <a href="#">
+                        <div class="intro-wrap">
+                            <div class="intro-img">
+                                <img src="img/img/intro3.png" alt="intro3">
+                            </div>
+                            <div class="intro-hover">
+                                <h3>이모티콘</h3>
+                            </div>
+                        </div>
+                        <div class="intro-des">
+                            <p>이모티콘</p>
+                        </div>
+                        <span>설명</span>
+                    </a>
+                </div> <!-- custom-sursor-area intro3 -->
+                <div class="custom-cursor-area intro4">
+                    <a href="#">
+                        <div class="intro-wrap">
+                            <div class="intro-img">
+                                <img src="img/img/intro4.png" alt="intro4">
+                            </div>
+                            <div class="intro-hover">
+                                <h3>이모티콘</h3>
+                            </div>
+                        </div>
+                        <div class="intro-des">
+                            <p>이모티콘</p>
+                        </div>
+                        <span>설명</span>
+                    </a>
+                </div> <!-- custom-sursor-area intro4 -->
+                <div class="custom-cursor-area intro5">
+                    <a href="#">
+                        <div class="intro-wrap">
+                            <div class="intro-img">
+                                <img src="img/img/intro5.gif" alt="intro5">
+                            </div>
+                            <div class="intro-hover">
+                                <h3>이모티콘</h3>
+                            </div>
+                        </div>
+                        <div class="intro-des">
+                            <p>이모티콘</p>
+                        </div>
+                        <span>설명</span>
+                    </a>
+                </div> <!-- custom-sursor-area intro5 -->
+                <div class="custom-cursor-area intro6">
+                    <a href="#">
+                        <div class="intro-wrap">
+                            <div class="intro-img">
+                                <img src="img/img/intro6.gif" alt="intro6">
+                            </div>
+                            <div class="intro-hover">
+                                <h3>이모티콘</h3>
+                            </div>
+                       </div>
+                        <div class="intro-des">
+                            <p>이모티콘</p>
+                        </div>
+                        <span>설명</span>
+                    </a>
+                </div> <!-- custom-sursor-area intro6 -->
+                <div class="custom-cursor-area intro7">
+                    <a href="#">
+                        <div class="intro-wrap">
+                            <div class="intro-img">
+                                <img src="img/img/intro7.gif" alt="intro7">
+                            </div>
+                            <div class="intro-hover">
+                                <h3>이모티콘</h3>
+                            </div>
+                        </div>
+                        <div class="intro-des">
+                            <p>이모티콘</p>
+                        </div>
+                        <span>설명</span>
+                    </a>
+                </div> <!-- custom-sursor-area intro7 -->
+            </div> <!-- intro-content-->
+        </section>
+        <section class="s7">
+            <!-- 흐르는 글자 -->
+            <div class="text-ani2">
+                <div class="text-wrap">
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                </div>
+            </div> <!--text-ani -->
+        </section> <!-- s7 -->
+        <section class="s8">
+            <div class="text-wrap">
+                <p>SHUBRIN ART</p>
+                <p>Commission & Illustration</p>
+                <p>SHUBRIN ART</p>
+                <p>Commission & Illustration</p>
+                <p>SHUBRIN ART</p>
+            </div> <!-- text-wrap -->
+        </section>
+        <section class="s9">
+            <div class="s9-partner">
+            <div class="partner-wrap">
+                <h2>PARTNER</h2>
+                <p>슈브린 아트는 다양한 장르의 그림 서비스를 제공하여 이용자분들을 항상 만족시켜드리기 위해 노력합니다.</p>
+                <div class="more-btn">
+                    <a href="#">
+                        <div class="more">
+                            <span></span>
+                            <p>view more</p>
+                        </div>
+                        <div class="arrow">
+                            <img src="img/imo/211621_c_right_arrow_icon.svg" alt="arrow">
+                        </div>
+                    </a>
+                </div> <!-- more-btn -->
+            </div> <!-- partner-wrap -->
+        </div>
+            <div class="text-ani3">
+                <div class="inner">
+                    <div class="track track">
+                        <p class="text"><a href="#">UMD Animation of CH&nbsp;&nbsp;</a></p>
+                        <p class="text"><a href="#">Commission of Hamster&nbsp;&nbsp;</a></p>
+                        <p class="text"><a href="#">Song of Hina&nbsp;&nbsp;</a></p>
+                        <p class="text"><a href="#">OnLine of Puple Fox&nbsp;&nbsp;</a></p>
+                        <p class="text"><a href="#">Game of DangCha&nbsp;&nbsp;</a></p>
+                        <p class="text"><a href="#">The Servival&nbsp;&nbsp;</a></p>
+                        <p class="text"><a href="#">Shubrin Company&nbsp;&nbsp;</a></p>
+                        <p class="text"><a href="#">Friends of Beast&nbsp;&nbsp;</a></p>
+                    </div>
+                </div> <!-- inner -->
+            </div> <!-- text-ani3 -->
+        </section> <!-- section s9 -->
+        <section class="s11">
+            <h2>Shubrin Art Movie</h2>
+            <p>슈브린 아트의 쇼츠 애니메이션을 만나보세요!</p>
+            <div class="slide-box">
+                <div class="swiper videoSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-img">
+                                <img src="img/img/nail.png" alt="imgvideo">
+                            </div>
+                            <b>영상제목</b>
+                            <h3>영상제목</h3>
+                            <p>내용</p>
+                            <span>날짜</span>
+                        </div> <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="swiper-img">
+                                <img src="img/img/slide1.png" alt="imgvideo">
+                            </div>
+                            <b>영상제목</b>
+                            <h3>영상제목</h3>
+                            <p>내용</p>
+                            <span>날짜</span>
+                        </div> <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="swiper-img">
+                                <img src="img/img/slide2.png" alt="imgvideo">
+                            </div>
+                            <b>영상제목</b>
+                            <h3>영상제목</h3>
+                            <p>내용</p>
+                            <span>날짜</span>
+                        </div> <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="swiper-img">
+                                <img src="img/img/slide3.png" alt="imgvideo">
+                            </div>
+                            <b>영상제목</b>
+                            <h3>영상제목</h3>
+                            <p>내용</p>
+                            <span>날짜</span>
+                        </div> <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="swiper-img">
+                                <img src="img/img/nail.png" alt="imgvideo">
+                            </div>
+                            <b>영상제목</b>
+                            <h3>영상제목</h3>
+                            <p>내용</p>
+                            <span>날짜</span>
+                        </div> <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="swiper-img">
+                                <img src="img/img/slide3.png" alt="imgvideo">
+                            </div>
+                            <b>영상제목</b>
+                            <h3>영상제목</h3>
+                            <p>내용</p>
+                            <span>날짜</span>
+                        </div> <!-- swiper-slide -->
+                    </div><!-- swiper-wrapper -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div> <!-- slide-box -->
+        </section> <!-- section s11 -->
+        <section class="s12">
+            <!-- 흐르는 글자 -->
+            <div class="text-ani">
+                <div class="text-wrap">
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                    <p> Commission And Illustration &amp;&nbsp;&nbsp; </p>
+                </div>
+            </div> <!--text-ani -->
+            <div class="line-up">
+                <h2>New Movie</h2>
+                <p>슈브린 아트의 최신작을 감상하고 미래의 방향에 대해 이야기해보아요.</p>
+                <div class="custom-cursor-area ani-area">
+                    <a href="#">
+                        <div class="line-up-video">
+                            <video src="img/movie.mp4" type="video/mp4" muted autoplay playsinline controls loop></video>
+                        </div>
+                    </a>
+                </div> <!-- custom-cursor-area -->
+            </div> <!-- line up -->
+        </section> <!-- section s12 -->
+        <footer>
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <div class="footer-top-left">
+                        <h2>고객센터</h2>
+                        <address>
+                            인천광역시 계양구 계양대로 119번길
+                            <span>전화 032-971-7225<br>
+                            팩스 032-971-7225</span>
+                        </address>
+                        <i>· 방문, 전화 상담은 평일 9시 ~ 18시에 가능합니다.</i>
+                        <div class="btns">
+                            <button>자주 하는 질문</button>
+                            <button>1:1 문의</button>
+                            <button>클린신고센터</button>
+                        </div>
+                    </div> <!-- footer-top-left -->
+                    <div class="footer-top-right">
+                        <div id="map" class="map">
+                            <!-- 카카오 지도  -->
+                            <div id="daumRoughmapContainer1728269714912" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                        </div>
+                    </div>
+                </div> <!-- footer-top -->
+                <div class="footer-bottom">
+                    <div class="footer-bottom-left">
+                        <div class="footer-logo">
+                            <img src="img/logo.png" alt="logo">
+                        </div>
+                        <address>
+                            (주)슈브린아트<br>인천광역시 계양구 계양대로 119번길<br>전화
+                            032-971-7225 | 팩스 032-971-7225 | 대표자 : 이율
+                        </address>
+                        <p>Copyright ⓒ 2023 Shubrin Art. All righr reserved.</p>
+                    </div> <!-- footer-bottom-left -->
+                    <div class="footer-bottom-right">
+                        <div class="family">
+                            <a href="#">
+                                <p>FAMILY SITE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></p>
+                                <!-- <span><img src="img/imo/765247_dribbble_media_social_icon.svg" alt=""></span> -->
+                            </a>
+                            <div class="family-site">
+                                <a href="#">UMD Animation of CH</a>
+                                <a href="#">Commission of Hamster</a>
+                                <a href="#">Song of Hina</a>
+                                <a href="#">OnLine of Puple Fox</a>
+                                <a href="#">Game of DangCha</a>
+                                <a href="#">The Servival</a>
+                                <a href="#">Shubrin Company</a>
+                                <a href="#">Friends of Beast</a>
+                            </div>
+                        </div> <!--family -->
+                        <div class="sns">
+                            <ul>
+                                <li><a href="#">
+                                    <img src="img/imo/986948_kakaotalk_icon.png" alt="카카오">
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="img/imo/317714_video_youtube_icon.png" alt="유튜브">
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="img/imo/4102573_applications_facebook_media_social_icon.png" alt="페이스북">
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="img/imo/1298747_instagram_brand_logo_social media_icon.png" alt="인스타">
+                                </a></li>
+                            </ul>
+                        </div><!-- sns-->
+                    </div> <!-- footer-bottom-right -->
+                </div>
+            </div> <!-- footer-bottom -->
+            <div class="top-btn">
+                <div class="top-btn-wrap">
+                    <img src="img/imo/216099_up_arrow_icon.svg" alt="uparrow">
+                </div>
+            </div>
+        </footer>
+    </div> <!--wrap -->
+
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1728269714912" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1728269714912",
+		"key" : "2ktpe",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
+	}).render();
+</script>
+
+    <script>
+        // .s6영역의 자식객체 intro-wrap애니메이션
+        document.addEventListener("DOMContentLoaded", function(){
+            const introWraps = document.querySelectorAll(".s6 .intro-wrap");
+            const introAni = {
+            root: null,      //viewport가 기본값
+            rootMargin:'0px',    //viewport와의 간격
+            thresold:0.1     //자식 객체의 10%가 보이면 callback 실행
+            };
+            //callback함수 선언
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting){
+                        entry.target.classList.add("active");
+                    }else{
+                        entry.target.classList.remove("active");
+                    }
+                });
+            }, introAni);
+            //각 intro-wrap객체에 observer 연결
+            introWraps.forEach(introWrap => {
+                observer.observe(introWrap);
+            });
+        
+        });
+    </script>
+</body>
+</html>
